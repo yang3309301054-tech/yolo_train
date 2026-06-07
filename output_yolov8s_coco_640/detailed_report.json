@@ -1,0 +1,42 @@
+{
+  "project": "YOLOv8s Object Detection - COCO 640",
+  "date": "2026-06-07 22:43:15",
+  "model": {
+    "name": "YOLOv8s",
+    "version": "small",
+    "pretrained": true,
+    "input_size": 640,
+    "num_classes": 80,
+    "parameters_M": 11.1,
+    "flops_G": 28.5
+  },
+  "training": {
+    "dataset": "COCO 640",
+    "train_samples": 640,
+    "val_samples": 640,
+    "epochs": 150,
+    "batch_size": 8,
+    "device": "cuda",
+    "training_time_hours": 1.6723949100573858,
+    "training_time_minutes": 40.34369460344315
+  },
+  "hardware": {
+    "gpu": "Tesla P4",
+    "cuda_version": "11.8",
+    "gpu_memory_gb": 7.96852224
+  },
+  "results": {
+    "mAP@0.5": 0.9695638494873207,
+    "mAP@0.75": 0.9507976665057875,
+    "mAP@0.5:0.95": 0.9189085049803536,
+    "precision": 0.9788482060390721,
+    "recall": 0.9556650573855021,
+    "F1_score": 0.9671177186348596
+  },
+  "official_benchmark": {
+    "dataset": "COCO 2017 Val (5000 images)",
+    "mAP@0.5": 0.696,
+    "mAP@0.5:0.95": 0.446,
+    "epochs": 500
+  }
+}
